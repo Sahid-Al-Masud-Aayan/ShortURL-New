@@ -1,12 +1,27 @@
 {
-    "version": 2,
-    "builds": [
-      {"src": "*.js", "use": "@vercel/node"}
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ]
+
+  "version": 2,
+
+  "build": {
+
+    "command": "npm run build",
+
+    "outputDirectory": "dist"
+
+  },
+
+  "routes": [
+
+    // Optional rewrites or redirects if needed
+
+  ],
+
+  "env": {
+
+    // Define environment variables for your application
+
+    "NODE_ENV": "production"
+
+  }
+
 }
