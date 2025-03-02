@@ -5,6 +5,7 @@ const router = require('./router');
 const app = express()
 app.use(express.json())
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }))
 var cookieParser = require('cookie-parser')
